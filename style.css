@@ -28,6 +28,7 @@ body{
     background: #F3F5FC;
     font-size: 18px;
     resize: none;
+    box-shadow: -2px -2px 5px #0a3871;
 }
 
 .encriptador p{
