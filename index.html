@@ -15,15 +15,17 @@
             <img src="LogoA.jpg" alt="Logo creador">
             <textarea id="txtUsuario" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
             <p>⚠ Ingrese solo minúsculas y sin acentos</p>
-            <button class="btnEncriptar">Encriptar</button>
-            <button class="btnDesencriptar">Desencriptar</button>
+            <button class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
         </section>
 
         <section class="desencriptador">
-            <textarea id="txtResultado" cols="30" rows="10"></textarea>
-            <img src="Muñeco.png" alt="No se ha encontrado texto">
-            <h1>Ningún mensaje fue encontrado </h1>
-            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            <textarea id="txtResultado" cols="30" rows="10" disabled></textarea>
+            <div id="mensaje">
+                <img src="Muñeco.png" alt="No se ha encontrado texto">
+                <h1>Ningún mensaje fue encontrado </h1>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
         </section>
 
     </section>
@@ -33,6 +35,8 @@
         <a href="https://github.com/AndroMaster00"><img src="logoGithub.png" alt="Logo Github" width="50px"></a>
         <a href="https://www.linkedin.com/in/androzarate"><img src="logoLinkedin.png" alt="Logo LinkedIn" width="50px"></a>
     </footer>
+
+    <script src="app.js"></script>
 
 </body>
 

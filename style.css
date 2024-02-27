@@ -64,8 +64,12 @@ body{
 
 #txtResultado{
     width: 90%;
-    height: 35em;
+    margin: 5% 5%;
+    height: 28em;
     display: none;
+    border: none;
+    resize: none;
+    font-size: 18px;
 }
 
 footer{
