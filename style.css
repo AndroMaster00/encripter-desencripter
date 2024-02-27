@@ -65,11 +65,27 @@ body{
 #txtResultado{
     width: 90%;
     margin: 5% 5%;
-    height: 28em;
+    height: 26em;
     display: none;
     border: none;
     resize: none;
     font-size: 18px;
+}
+
+#mensaje{
+    margin: 15%;
+}
+
+.btnCopiar{
+    height: 2em;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 20px; 
+    background: #D8DFE8;
+    color: #0a3871;
+    border-radius: 10px;
+    border: none;
+    display: none;
 }
 
 footer{

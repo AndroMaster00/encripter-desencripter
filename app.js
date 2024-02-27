@@ -11,7 +11,8 @@ const llave = [
 
 function btnEncriptar() {
     const texto = encriptar(txtUsuario.value);
-    document.getElementById("txtResultado").style.display = "block";
+    txtResultado.style.display = "block";
+    document.querySelector(".btnCopiar").style.display = "block";
     document.getElementById("mensaje").style.display = "none";
     txtResultado.value = texto;
 }
@@ -27,7 +28,8 @@ function encriptar(frase) {
 
 function btnDesencriptar() {
     const texto = desencriptar(txtUsuario.value);
-    document.getElementById("txtResultado").style.display = "block";
+    txtResultado.style.display = "block";
+    document.querySelector(".btnCopiar").style.display = "block";
     document.getElementById("mensaje").style.display = "none";
     txtResultado.value = texto;
 }
@@ -39,4 +41,8 @@ function desencriptar(frase) {
         }
     }
     return frase;
+}
+
+function btnCopiar() {
+    navigator.clipboard.writeText(txtResultado.value);
 }
