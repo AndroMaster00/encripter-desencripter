@@ -1,0 +1,74 @@
+body{
+    background: #F3F5FC;
+    text-align: center;
+}
+
+.principal{
+    width: 940px;
+    margin: 20px auto;
+}
+
+.encriptador{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.encriptador img{
+    width: 50px;
+    margin-left: 5%;
+    display: block;
+}
+
+#txtUsuario{
+    height: 20em;
+    width: 90%;
+    margin: 20px 0;
+    border: none;
+    background: #F3F5FC;
+    font-size: 18px;
+    resize: none;
+}
+
+.encriptador p{
+    color: darkgrey;
+}
+
+.btnEncriptar{
+    height: 2em;
+    width: 40%;
+    font-size: 20px;
+    background: #0a3871;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.btnDesencriptar{
+    height: 2em;
+    width: 40%;
+    font-size: 20px; 
+    background: #D8DFE8;
+    color: #0a3871;
+    border-radius: 10px;
+    border: none;
+}
+
+.desencriptador{
+    height: 35em;
+    width: 45%;
+    background: white;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#txtResultado{
+    width: 90%;
+    height: 35em;
+    display: none;
+}
+
+footer{
+    margin: 2% 0;
+    font-size: 10px;
+}
