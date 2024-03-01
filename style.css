@@ -104,3 +104,21 @@ footer{
     margin: 2% 0;
     font-size: 10px;
 }
+
+@media (max-width:435px){
+    .principal{
+        width: auto;
+        margin: 20px auto;
+    }
+
+    .encriptador, .desencriptador{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    #txtUsuario, #txtResultado{
+        height: auto;
+    }
+}
