@@ -19,6 +19,9 @@ function btnEncriptar() {
     }else{
         alert("Se ha ingresado una mayúscula, por favor verifique");
     }
+    document.querySelector(".btnCopiar").style.background = "#D8DFE8";
+    document.querySelector(".btnCopiar").style.color = "#0a3871";
+    document.querySelector(".btnCopiar").textContent = "Copiar";
 }
 
 function encriptar(frase) {
@@ -40,6 +43,9 @@ function btnDesencriptar() {
     }else{
         alert("Se ha ingresado una mayúscula, por favor verifique");
     }
+    document.querySelector(".btnCopiar").style.background = "#D8DFE8";
+    document.querySelector(".btnCopiar").style.color = "#0a3871";
+    document.querySelector(".btnCopiar").textContent = "Copiar";
 }
 
 function desencriptar(frase) {
@@ -47,13 +53,15 @@ function desencriptar(frase) {
         if (frase.includes(llave[i][1])) {
             frase = frase.replaceAll(llave[i][1], llave[i][0]);
         }
-        console.log(i);
     }
     return frase;
 }
 
 function btnCopiar() {
     navigator.clipboard.writeText(txtResultado.value);
+    document.querySelector(".btnCopiar").style.background = "green";
+    document.querySelector(".btnCopiar").style.color = "#D8DFE8";
+    document.querySelector(".btnCopiar").textContent = "¡Copiado!";
 }
 
 function contieneMayuscula(texto) {

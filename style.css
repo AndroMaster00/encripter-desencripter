@@ -33,6 +33,7 @@ body{
 
 .encriptador p{
     color: darkgrey;
+    
 }
 
 .btnEncriptar{
@@ -43,6 +44,11 @@ body{
     color: white;
     border-radius: 10px;
     border: none;
+    transition: 500ms;
+}
+
+.btnEncriptar:hover{
+    transform: scale(1.05);
 }
 
 .btnDesencriptar{
@@ -53,6 +59,11 @@ body{
     color: #0a3871;
     border-radius: 10px;
     border: none;
+    transition: 500ms;
+}
+
+.btnDesencriptar:hover{
+    transform: scale(1.05);
 }
 
 .desencriptador{
