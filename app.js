@@ -10,14 +10,18 @@ const llave = [
 ];
 
 function btnEncriptar() {
-    if (!contieneMayuscula(txtUsuario.value)) {
+    if (!contieneMayuscula(txtUsuario.value) && txtUsuario.value != "") {
         const texto = encriptar(txtUsuario.value);
         txtResultado.style.display = "block";
         document.querySelector(".btnCopiar").style.display = "block";
         document.getElementById("mensaje").style.display = "none";
         txtResultado.value = texto;    
     }else{
-        alert("Se ha ingresado una mayúscula, por favor verifique");
+        if (txtUsuario.value == "") {
+            alert("Ingrese texto a encriptar");    
+        }else{
+            alert("Se ha ingresado una mayúscula, por favor verifique");
+        }
     }
     document.querySelector(".btnCopiar").style.background = "#D8DFE8";
     document.querySelector(".btnCopiar").style.color = "#0a3871";
@@ -34,14 +38,18 @@ function encriptar(frase) {
 }
 
 function btnDesencriptar() {
-    if (!contieneMayuscula(txtUsuario.value)) {
+    if (!contieneMayuscula(txtUsuario.value) && txtUsuario.value != "") {
         const texto = desencriptar(txtUsuario.value);
         txtResultado.style.display = "block";
         document.querySelector(".btnCopiar").style.display = "block";
         document.getElementById("mensaje").style.display = "none";
         txtResultado.value = texto;
     }else{
-        alert("Se ha ingresado una mayúscula, por favor verifique");
+        if (txtUsuario.value == "") {
+            alert("Ingrese texto a desencriptar");    
+        }else{
+            alert("Se ha ingresado una mayúscula, por favor verifique");
+        }
     }
     document.querySelector(".btnCopiar").style.background = "#D8DFE8";
     document.querySelector(".btnCopiar").style.color = "#0a3871";
