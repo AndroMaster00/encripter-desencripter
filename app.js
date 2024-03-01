@@ -35,10 +35,11 @@ function btnDesencriptar() {
 }
 
 function desencriptar(frase) {
-    for (let i = 0; i < llave.length; i++) {
+    for (let i = (llave.length - 1); i >=0; i--) {
         if (frase.includes(llave[i][1])) {
             frase = frase.replaceAll(llave[i][1], llave[i][0]);
         }
+        console.log(i);
     }
     return frase;
 }
